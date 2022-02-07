@@ -62,20 +62,33 @@ header {
   font-size: 200%;
   text-align: center;
   font-weight: lighter;
+  color: #5a5a5a;
 }
 
 #presentation .pres_btn {
   border-radius: 100px;
-  width: 300px;
+  width: 400px;
   height: 100px;
   font-size: 200%;
   color: white;
-  background-color: blueviolet;
+  background-color: #9356DC;
   border-style: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 
 #presentation .pres_btn:hover {
   background-color: red;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #fonctionnement {
@@ -112,7 +125,7 @@ header {
 }
 
 #fonctionnement p {
-  background: #6c3e8b;
+  background: #9356DC;
   position: relative;
   left: 30px;
   font-size: 230%;
@@ -155,13 +168,14 @@ header {
 }
 
 #restaurants {
-  background-color: #535353;
-  height: 2500px;
+  background-color: #f2f2f2;
+  height: auto;
 }
 
 #restaurants #card_resto_zone {
   width: 100%;
   height: 100%;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,21 +192,121 @@ header {
 }
 
 #restaurants .card_resto {
-  width: 85%;
-  border-radius: 30px;
+  width: 90%;
+  border-radius: 70px;
   background-color: white;
-  height: 500px;
+  height: auto;
+  margin-bottom: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#restaurants .card_resto h2 {
+  font-size: 300%;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+#restaurants .card_resto p {
+  font-size: 300%;
+  margin-top: 0px;
+  margin-left: 30px;
 }
 
 #restaurants .img_resto {
   width: 100%;
-  height: 300px;
-  border-radius: 20px 20px 0px 0px;
+  height: 488px;
+  border-radius: 70px 70px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+#restaurants #anim-hearth {
+  position: relative;
+  top: 70px;
+  right: 70px;
+}
+
+#restaurants .btn_like {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  right: 70px;
+  border-style: none;
+  background-color: white;
+}
+
+#restaurants .btn_like :active + .coeur_anim {
+  -webkit-transform: scale(1.05) rotate(0deg);
+          transform: scale(1.05) rotate(0deg);
+}
+
 #restaurants .coeur {
-  width: 50px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#restaurants .coeur_anim {
+  -webkit-transform: scale(0) rotate(-480deg);
+          transform: scale(0) rotate(-480deg);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+#restaurants h1 {
+  font-size: 400%;
+  padding-top: 120px;
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+
+#restaurants .card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
+  background-color: gray;
+  width: 100%;
+  padding-bottom: 5px;
+  width: auto;
+}
+
+footer #list_footer {
+  font-size: 200%;
+  color: white;
+  list-style: none;
+}
+
+footer #list_footer a {
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer #logo_footer {
+  color: white;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+footer .icon_footer {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

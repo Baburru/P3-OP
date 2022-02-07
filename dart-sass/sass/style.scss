@@ -52,19 +52,26 @@ header
         font-size: 200%;
         text-align: center;
         font-weight: lighter;
+        color: rgb(90, 90, 90);
     }
 
     & .pres_btn {
         border-radius: 100px;
-        width: 300px;
+        width: 400px;
         height: 100px;
         font-size: 200%;
         color: white;
-        background-color: blueviolet;
+        background-color: #9356DC;
         border-style: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        transform: scale(1);
+        transition: transform 0.7s ease-in-out;
         
         &:hover{
             background-color: red;
+            box-shadow: 5px 3px 10px rgb(168, 168, 168);
+            transform: scale(1.15);
         }
     }
 }
@@ -91,7 +98,7 @@ justify-content: space-evenly;
     }
 
     & p {
-        background: rgb(108, 62, 139);
+        background: #9356DC;
         position: relative;
         left: 30px;
         font-size: 230%;
@@ -127,33 +134,130 @@ justify-content: space-evenly;
 
 #restaurants
 {
-background-color: #535353;
-height: 2500px;
+background-color: #f2f2f2;
+height: auto;
 
     & #card_resto_zone {
         width: 100%;
         height: 100%;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
     & .card_resto {
-        width: 85%;
-        border-radius: 30px;
+        width: 90%;
+        border-radius: 70px;
         background-color: white;
-        height: 500px;
+        height: auto;
+        margin-bottom: 50px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        & h2 {
+            font-size: 300%;
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+
+        & p {
+            font-size: 300%;
+            margin-top: 0px;
+            margin-left: 30px;
+        }
     }
 
     & .img_resto {
         width: 100%;
-        height: 300px;
+        height: 488px;
 
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 70px 70px 0px 0px;
         object-fit: cover;
     }
 
+    & #anim-hearth {
+        position: relative;
+        top: 70px;
+        right: 70px;
+
+    }
+
+    & .btn_like {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        right: 70px;
+        border-style: none;
+        background-color: white;
+
+        & :active + .coeur_anim {
+            transform: scale(1.05) rotate(0deg);
+        }
+    }
+
+    
     & .coeur {
-        width: 50px;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    & .coeur_anim {
+        transform: scale(0) rotate(-480deg);
+        transition: transform 400ms ease-in-out;
+  
+    }
+
+
+
+    & h1 {
+        font-size: 400%;
+        padding-top: 120px;
+        padding-left: 50px;
+        margin-bottom: 0px;
+    }
+
+    & .card_content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+footer 
+{
+    background-color: gray;
+    width: 100%;
+    padding-bottom: 5px;
+
+
+
+    width: auto;
+    & #list_footer {
+        font-size: 200%;
+        color: white;
+        list-style: none;
+        
+        & a {
+            font-style: normal;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    & #logo_footer {
+        color: white;
+        filter: invert(100%);
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    & .icon_footer {
+        filter: invert(100%);
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
     }
 }
