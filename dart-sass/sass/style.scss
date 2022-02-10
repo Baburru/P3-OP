@@ -61,7 +61,7 @@ header
         height: 100px;
         font-size: 200%;
         color: white;
-        background-color: #9356DC;
+        background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
         border-style: none;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
@@ -73,6 +73,7 @@ header
             box-shadow: 5px 3px 10px rgb(168, 168, 168);
             transform: scale(1.15);
         }
+
     }
 }
 
@@ -175,40 +176,15 @@ height: auto;
         object-fit: cover;
     }
 
-    & #anim-hearth {
+    & .anim-heart {
         position: relative;
         top: 70px;
         right: 70px;
 
     }
 
-    & .btn_like {
-        width: 80px;
-        height: 80px;
-        position: relative;
-        right: 70px;
-        border-style: none;
-        background-color: white;
 
-        & :active + .coeur_anim {
-            transform: scale(1.05) rotate(0deg);
-        }
-    }
-
-    
-    & .coeur {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-
-    & .coeur_anim {
-        transform: scale(0) rotate(-480deg);
-        transition: transform 400ms ease-in-out;
-  
-    }
+   
 
 
 
@@ -261,3 +237,68 @@ footer
         margin-right: 20px;
     }
 }
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+
+transform: translate(-50%, -50%);
+&.icon--heart {
+    &:before, &:after {
+        font-family: 'fontAwesome';
+        content: '\f004';
+        font-size: 70px;
+        position: absolute;
+        right: 50px;
+    }
+
+        
+    }
+
+    &:before {
+        color: grey;
+    }
+    
+    &:after{
+    opacity: 0;
+            color: crimson;
+}
+}
+
+
+
+.container > input:checked ~ label {
+&.icon--heart {
+    &:before {
+        color: crimson;
+        animation: pulse 0.5s alternate;
+    }
+}
+}
+
+@keyframes pulse {
+0%{
+    transform: scale(1) ;
+opacity: 1;
+}
+
+50% {
+    transform: scale(1.2) ;
+opacity: 1;
+}
+
+70% {
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+100%{
+    transform: scale(1);
+opacity: 1;
+}
+}
+
