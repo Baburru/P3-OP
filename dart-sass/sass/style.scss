@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -23,6 +27,7 @@ header
 
     & h2{
         font-family: "Shrikhand", sans-serif;
+        padding-top: 7px;
     }
 }
 
@@ -31,7 +36,7 @@ header
     width: 40px;
     height: 40px;
     position: relative;
-    top: 10px;
+    
     padding-right: 5px;
 }
 
@@ -41,11 +46,12 @@ header
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     & h1 {
         font-size: 300%;
         text-align: center;
+        margin-top: 20px;
     }
 
     & p {
@@ -53,12 +59,16 @@ header
         text-align: center;
         font-weight: lighter;
         color: rgb(90, 90, 90);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
     }
 
     & .pres_btn {
         border-radius: 100px;
         width: 400px;
         height: 100px;
+        margin-bottom: 50px;
         font-size: 200%;
         color: white;
         background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
@@ -87,6 +97,8 @@ justify-content: space-evenly;
 
     & h2 {
         font-size: 250%;
+        padding-top: 20px;
+        padding-bottom: 20px;
         
     }
     & h1 {
@@ -127,7 +139,7 @@ justify-content: space-evenly;
         width: 6%;
         height: 6%;
         position: relative;
-        top: 30px;
+        top: 20px;
         margin-right: 100px;
         margin-left: 80px;
     }
@@ -152,13 +164,16 @@ height: auto;
         border-radius: 70px;
         background-color: white;
         height: auto;
+        padding-bottom: 50px;
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
         & h2 {
             font-size: 300%;
+            margin-top: 20px;
             margin-bottom: 10px;
             margin-left: 30px;
+
         }
 
         & p {
@@ -203,7 +218,7 @@ height: auto;
 
 footer 
 {
-    background-color: gray;
+    background-color: rgb(94, 94, 94);
     width: 100%;
     padding-bottom: 5px;
 
@@ -214,27 +229,31 @@ footer
         font-size: 200%;
         color: white;
         list-style: none;
-        
+        margin-left: 20px;
+        padding-bottom: 20px;
+
         & a {
             font-style: normal;
             text-decoration: none;
             color: white;
             font-weight: bold;
+            margin-left: 20px;
+            
         }
     }
 
     & #logo_footer {
         color: white;
         filter: invert(100%);
-        padding-top: 20px;
-        padding-left: 20px;
+        padding: 20px;
     }
 
     & .icon_footer {
         filter: invert(100%);
         width: 30px;
         height: 30px;
-        margin-right: 20px;
+        
+        margin-left: 20px;
     }
 }
 
@@ -265,7 +284,7 @@ transform: translate(-50%, -50%);
     
     &:after{
     opacity: 0;
-            color: crimson;
+            color: #9356DC;
 }
 }
 
@@ -274,7 +293,7 @@ transform: translate(-50%, -50%);
 .container > input:checked ~ label {
 &.icon--heart {
     &:before {
-        color: crimson;
+        color: #9356DC;
         animation: pulse 0.5s alternate;
     }
 }
@@ -302,3 +321,128 @@ opacity: 1;
 }
 }
 
+header {
+    display: flex;
+
+    & .button_header {
+        display: flex;
+        border-style: none;
+        background-color: transparent;
+        position: relative;
+        right: 200px;
+        font-size: 70px;
+    }
+}
+
+body {
+    & .img_resto_big {
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: rgb(240, 240, 240);
+        bottom: 70px;
+        border-radius: 70px 70px 0px 0px;
+
+        & .top_menu {
+            display: flex;
+            padding-top: 50px;
+            margin-left: 50px;
+
+            & h1 {
+                font-family: 'Shrikhand', 'cursive';
+                font-size: 500%;
+                font-weight: 400;
+            }
+
+            & .anim-heart {
+                margin-top: 30px;
+            }
+        }
+
+
+        & .card_zone_resto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & h2 {
+                font-size: 250%;
+                font-weight: 200;
+                margin-top: 100px;
+                margin-left: 40px;
+                align-self: flex-start;
+            }
+    
+            & .card_resto {
+                background-color: white;
+                width: 90%;
+                border-radius: 30px;
+                box-shadow: 5px 3px 10px rgb(168, 168, 168);
+                font-size: 200%;
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                & h3 {
+                    font-size: 130%;
+                    margin-bottom: 10px;
+                }
+
+                & .content_card_resto {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    & p {
+                        margin-bottom: 10px;
+                        font-weight: 200;
+                    }
+                }
+
+                .prix {
+                    display: flex;
+                    align-self: flex-end;
+                    font-weight: 900;
+                    font-size: 130%;
+                    position: relative;
+                    right: 30px;
+                    bottom: 10px;
+                }
+
+
+            }
+
+            & .pres_btn {
+                margin-top: 80px;
+                border-radius: 100px;
+                width: 400px;
+                height: 100px;
+                margin-bottom: 100px;
+                font-size: 200%;
+                color: white;
+                background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
+                border-style: none;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        
+                transform: scale(1);
+                transition: transform 0.7s ease-in-out;
+                
+                &:hover{
+                    background-color: red;
+                    box-shadow: 5px 3px 10px rgb(168, 168, 168);
+                    transform: scale(1.15);
+                }
+        
+            }
+
+        }
+
+    }
+}

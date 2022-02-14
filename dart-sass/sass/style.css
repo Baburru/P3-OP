@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -28,13 +33,13 @@ header {
 
 #localisation h2 {
   font-family: "Shrikhand", sans-serif;
+  padding-top: 7px;
 }
 
 #ping {
   width: 40px;
   height: 40px;
   position: relative;
-  top: 10px;
   padding-right: 5px;
 }
 
@@ -50,12 +55,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #presentation h1 {
   font-size: 300%;
   text-align: center;
+  margin-top: 20px;
 }
 
 #presentation p {
@@ -63,12 +69,15 @@ header {
   text-align: center;
   font-weight: lighter;
   color: #5a5a5a;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #presentation .pres_btn {
   border-radius: 100px;
   width: 400px;
   height: 100px;
+  margin-bottom: 50px;
   font-size: 200%;
   color: white;
   background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
@@ -108,6 +117,8 @@ header {
 
 #fonctionnement h2 {
   font-size: 250%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #fonctionnement h1 {
@@ -162,7 +173,7 @@ header {
   width: 6%;
   height: 6%;
   position: relative;
-  top: 30px;
+  top: 20px;
   margin-right: 100px;
   margin-left: 80px;
 }
@@ -196,6 +207,7 @@ header {
   border-radius: 70px;
   background-color: white;
   height: auto;
+  padding-bottom: 50px;
   margin-bottom: 50px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -203,6 +215,7 @@ header {
 
 #restaurants .card_resto h2 {
   font-size: 300%;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 30px;
 }
@@ -244,7 +257,7 @@ header {
 }
 
 footer {
-  background-color: gray;
+  background-color: #5e5e5e;
   width: 100%;
   padding-bottom: 5px;
   width: auto;
@@ -254,6 +267,8 @@ footer #list_footer {
   font-size: 200%;
   color: white;
   list-style: none;
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 footer #list_footer a {
@@ -261,14 +276,14 @@ footer #list_footer a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 footer #logo_footer {
   color: white;
   -webkit-filter: invert(100%);
           filter: invert(100%);
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 footer .icon_footer {
@@ -276,7 +291,7 @@ footer .icon_footer {
           filter: invert(100%);
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 input[type="checkbox"] {
@@ -302,11 +317,11 @@ label:before {
 
 label:after {
   opacity: 0;
-  color: crimson;
+  color: #9356DC;
 }
 
 .container > input:checked ~ label.icon--heart:before {
-  color: crimson;
+  color: #9356DC;
   -webkit-animation: pulse 0.5s alternate;
           animation: pulse 0.5s alternate;
 }
@@ -355,5 +370,153 @@ label:after {
             transform: scale(1);
     opacity: 1;
   }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .button_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: none;
+  background-color: transparent;
+  position: relative;
+  right: 200px;
+  font-size: 70px;
+}
+
+body .img_resto_big {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .menu {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #f0f0f0;
+  bottom: 70px;
+  border-radius: 70px 70px 0px 0px;
+}
+
+body .menu .top_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+
+body .menu .top_menu h1 {
+  font-family: 'Shrikhand', 'cursive';
+  font-size: 500%;
+  font-weight: 400;
+}
+
+body .menu .top_menu .anim-heart {
+  margin-top: 30px;
+}
+
+body .menu .card_zone_resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .menu .card_zone_resto h2 {
+  font-size: 250%;
+  font-weight: 200;
+  margin-top: 100px;
+  margin-left: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body .menu .card_zone_resto .card_resto {
+  background-color: white;
+  width: 90%;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  font-size: 200%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body .menu .card_zone_resto .card_resto h3 {
+  font-size: 130%;
+  margin-bottom: 10px;
+}
+
+body .menu .card_zone_resto .card_resto .content_card_resto {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+body .menu .card_zone_resto .card_resto .content_card_resto p {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+body .menu .card_zone_resto .card_resto .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 900;
+  font-size: 130%;
+  position: relative;
+  right: 30px;
+  bottom: 10px;
+}
+
+body .menu .card_zone_resto .pres_btn {
+  margin-top: 80px;
+  border-radius: 100px;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 100px;
+  font-size: 200%;
+  color: white;
+  background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
+  border-style: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+body .menu .card_zone_resto .pres_btn:hover {
+  background-color: red;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 /*# sourceMappingURL=style.css.map */
