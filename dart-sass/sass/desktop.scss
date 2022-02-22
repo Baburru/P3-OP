@@ -1,0 +1,50 @@
+header {
+    justify-content: flex-start;
+    & #logo {
+        width: 15%;
+    }
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+body {
+    & .intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    & #fonctionnement {
+        height: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        & #card_zone {
+            flex-direction: row;
+            width: 90%;
+            align-self: center;
+            height: fit-content;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            & .card_fonctio {
+                height: fit-content;
+                 
+                & h2 {
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+
+    & #presentation {
+        margin-bottom: 0;
+    }
+
+    & #localisation {
+        background: #cecece;
+    }
+
+    & #card_resto_zone {
+        flex-direction: row;
+    }
+}

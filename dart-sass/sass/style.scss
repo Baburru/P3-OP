@@ -95,10 +95,12 @@ height: 800px;
 flex-direction: column;
 justify-content: space-evenly;
 
+
     & h2 {
         font-size: 250%;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin-left: 40px;
         
     }
     & h1 {
@@ -106,8 +108,10 @@ justify-content: space-evenly;
     }
     & #card_zone {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 100%;
+        height: 600px;
     }
 
     & p {
@@ -142,6 +146,14 @@ justify-content: space-evenly;
         top: 20px;
         margin-right: 100px;
         margin-left: 80px;
+    }
+
+    & i {
+        font-size: 200%;
+        margin-left: 60px;
+        margin-right: 30px;
+        position: relative;
+        top: 20px;
     }
 }
 
@@ -181,6 +193,7 @@ height: auto;
             margin-top: 0px;
             margin-left: 30px;
         }
+        
     }
 
     & .img_resto {
@@ -198,10 +211,10 @@ height: auto;
 
     }
 
-
-   
-
-
+    & .card_txt :hover {
+        cursor: pointer;
+        
+    }
 
     & h1 {
         font-size: 400%;
@@ -321,6 +334,8 @@ opacity: 1;
 }
 }
 
+
+
 header {
     display: flex;
 
@@ -395,6 +410,11 @@ body {
                 & h3 {
                     font-size: 130%;
                     margin-bottom: 10px;
+                    text-overflow: ellipsis;
+                }
+
+                & p {
+                    text-overflow: ellipsis;
                 }
 
                 & .content_card_resto {
@@ -416,6 +436,9 @@ body {
                     bottom: 10px;
                 }
 
+                & :hover {
+                    cursor: pointer;
+                }
 
             }
 

@@ -1,0 +1,70 @@
+header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: 0 4px 2px -2px gray;
+          box-shadow: 0 4px 2px -2px gray;
+}
+
+header #logo {
+  width: 15%;
+}
+
+body .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+body #fonctionnement {
+  height: auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+body #fonctionnement #card_zone {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body #fonctionnement #card_zone .card_fonctio {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body #fonctionnement #card_zone .card_fonctio h2 {
+  font-size: 150%;
+}
+
+body #presentation {
+  margin-bottom: 0;
+}
+
+body #localisation {
+  background: #cecece;
+}
+
+body #card_resto_zone {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=desktop.css.map */
