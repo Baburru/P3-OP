@@ -67,4 +67,8 @@ body #card_resto_zone {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+body #card_resto_zone .card_resto {
+  /*             width: 20%; */
+}
 /*# sourceMappingURL=desktop.css.map */

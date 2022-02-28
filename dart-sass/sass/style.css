@@ -466,6 +466,7 @@ body .menu .card_zone_resto h2 {
 body .menu .card_zone_resto .card_resto {
   background-color: white;
   width: 90%;
+  max-height: 150px;
   border-radius: 30px;
   -webkit-box-shadow: 5px 3px 10px #a8a8a8;
           box-shadow: 5px 3px 10px #a8a8a8;
@@ -480,6 +481,18 @@ body .menu .card_zone_resto .card_resto {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
+}
+
+body .menu .card_zone_resto .card_resto .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 body .menu .card_zone_resto .card_resto h3 {
@@ -493,7 +506,7 @@ body .menu .card_zone_resto .card_resto p {
 }
 
 body .menu .card_zone_resto .card_resto .content_card_resto {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -510,13 +523,73 @@ body .menu .card_zone_resto .card_resto .prix {
       align-self: flex-end;
   font-weight: 900;
   font-size: 130%;
-  position: relative;
-  right: 30px;
-  bottom: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-body .menu .card_zone_resto .card_resto :hover {
+body .menu .card_zone_resto .card_resto .anim_green {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  height: 100px;
+  position: relative;
+  bottom: 30px;
+}
+
+body .menu .card_zone_resto .card_resto .scare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 180px;
+  height: 170px;
+  background-color: #00c97c;
+  position: relative;
+  left: 20px;
+  -webkit-transform: translate(180px, 0);
+          transform: translate(180px, 0);
+  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+body .menu .card_zone_resto .card_resto .scare .sign {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  right: 35%;
+  font-size: 170%;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  color: white;
+}
+
+body .menu .card_zone_resto .card_resto .nb {
+  text-align: right;
+}
+
+body .menu .card_zone_resto :hover {
   cursor: pointer;
+}
+
+body .menu .card_zone_resto :hover .scare {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+body .menu .card_zone_resto :hover .sign {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
 }
 
 body .menu .card_zone_resto .pres_btn {
