@@ -1,9 +1,18 @@
 header {
-    justify-content: flex-start;
+
+
     & #logo {
         width: 15%;
+
     }
     box-shadow: 0 4px 2px -2px gray;
+
+    & .button_header {
+        position: absolute;
+        left: 70px;
+    }
+
+
 }
 
 body {
@@ -44,11 +53,34 @@ body {
         background: #cecece;
     }
 
-    & #card_resto_zone {
+    & #restaurants {
         flex-direction: row;
+        
+        & #card_resto_zone {
+
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+        }
 
         & .card_resto {
-/*             width: 20%; */
+            min-width: 700px;
+            margin-left: 20px;
+
+
+            .img_resto {
+                height: 300px;
+            }
         }
     }
+}
+
+.card_zone_resto {
+    width: 75%;
+    align-items: flex-end;
+    margin-left: auto;
+margin-right: 0px;
+
 }

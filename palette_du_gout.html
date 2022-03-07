@@ -6,9 +6,37 @@
     <title>Oh My Food</title>
     <link rel="stylesheet" href="dart-sass/sass/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (min-width: 1224px)" href="dart-sass/sass/desktop.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc211c93c5.js" crossorigin="anonymous"></script>
+    <style>
+        .card_resto:nth-child(2) {animation-delay: 0s;}
+.card_resto:nth-child(3) {animation-delay: 0.2s;}
+.card_resto:nth-child(4) {animation-delay: 0.4s;}
+.card_resto:nth-child(6) {animation-delay: 0.6s;}
+.card_resto:nth-child(7) {animation-delay: 0.8s;}
+.card_resto:nth-child(8) {animation-delay: 1s;}
+.card_resto:nth-child(10) {animation-delay: 1.2s;}
+.card_resto:nth-child(11) {animation-delay: 1.4s;}
+.card_resto:nth-child(12) {animation-delay: 1.6s;}
+        .card_resto {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translate(0,20%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -35,12 +63,9 @@
     
 
     
-        <div class="card_zone_resto">
+        <div class="card_zone_resto" data-animation-offset="1.0">
 
             <h2>ENTRÉES</h2>
-            <span style="font-size: 3em; color: Tomato;">
-                <i class="fa-solid fa-horizontal-rule"></i>
-            </span>
 
             <div class="card_resto">
                 <div class="info">
@@ -61,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="card_resto">
+            <div class="card_resto" data-animation-offset="1.2">
                 <div class="info">
                 <div class="content_card_resto">
                     <h3>Foie gras de canard mi-cuit</h2>
