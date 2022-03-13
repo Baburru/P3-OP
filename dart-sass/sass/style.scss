@@ -30,12 +30,11 @@ header
     }
 }
 
-#ping
+.ping
 {
-    width: 40px;
-    height: 40px;
+font-size: 170%;
     position: relative;
-    
+    top: 5px;
     padding-right: 5px;
 }
 
@@ -243,7 +242,6 @@ footer
 
 
 
-    width: auto;
     & #list_footer {
         font-size: 200%;
         color: white;
@@ -267,13 +265,7 @@ footer
         padding: 20px;
     }
 
-    & .icon_footer {
-        filter: invert(100%);
-        width: 30px;
-        height: 30px;
-        
-        margin-left: 20px;
-    }
+
 }
 
 

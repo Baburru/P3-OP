@@ -59,19 +59,26 @@ body {
         & #card_resto_zone {
 
             display: flex;
+            width: 100%;
             flex-direction: row;
-            overflow-x: auto;
+            overflow-inline: auto;
             overflow-y: hidden;
+            align-items: center;
 
         }
 
         & .card_resto {
-            min-width: 700px;
+            min-width: 600px;
+            width: 100%;
             margin-left: 20px;
+            
 
 
             .img_resto {
-                height: 300px;
+                width: 100%;
+                height: 20vw;
+                object-fit: cover;
+
             }
         }
     }
@@ -83,4 +90,16 @@ body {
     margin-left: auto;
 margin-right: 0px;
 
+}
+
+footer {
+    height: 167px;
+    display: flex;
+    justify-content: space-around;
+
+    & #list_footer {
+        margin: 10px;
+        height: 50%;
+
+    }
 }

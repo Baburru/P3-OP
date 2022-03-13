@@ -74,21 +74,29 @@ body #restaurants #card_resto_zone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow-x: auto;
+  overflow-inline: auto;
   overflow-y: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body #restaurants .card_resto {
-  min-width: 700px;
+  min-width: 600px;
+  width: 100%;
   margin-left: 20px;
 }
 
 body #restaurants .card_resto .img_resto {
-  height: 300px;
+  width: 100%;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card_zone_resto {
@@ -98,5 +106,19 @@ body #restaurants .card_resto .img_resto {
           align-items: flex-end;
   margin-left: auto;
   margin-right: 0px;
+}
+
+footer {
+  height: 167px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer #list_footer {
+  margin: 10px;
+  height: 50%;
 }
 /*# sourceMappingURL=desktop.css.map */
