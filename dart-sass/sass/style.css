@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -115,6 +120,18 @@ header {
           justify-content: space-evenly;
 }
 
+#fonctionnement .number {
+  background: #9356DC;
+  position: relative;
+  left: 30px;
+  font-size: 230%;
+  text-align: center;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
 #fonctionnement h2 {
   font-size: 250%;
   padding-top: 20px;
@@ -142,21 +159,18 @@ header {
 }
 
 #fonctionnement p {
-  background: #9356DC;
   position: relative;
-  left: 30px;
-  font-size: 230%;
+  top: 10px;
   text-align: center;
   color: white;
-  width: 55px;
-  height: 55px;
-  border-radius: 50px;
 }
 
 #fonctionnement .card_fonctio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 95%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -217,7 +231,7 @@ header {
 }
 
 #restaurants .card_resto {
-  width: 90%;
+  width: 100%;
   border-radius: 70px;
   background-color: white;
   height: auto;
@@ -260,7 +274,7 @@ header {
 
 #restaurants h1 {
   font-size: 400%;
-  padding-top: 120px;
+  padding-top: 50px;
   padding-left: 50px;
   margin-bottom: 0px;
 }
@@ -315,6 +329,7 @@ label {
 label.icon--heart:before, label.icon--heart:after {
   font-family: 'fontAwesome';
   content: '\f004';
+  font-weight: 200;
   font-size: 70px;
   position: absolute;
   right: 50px;
@@ -467,6 +482,15 @@ body .menu .card_zone_resto {
           align-items: center;
 }
 
+body .menu .card_zone_resto .resto_col1 {
+  display: none;
+  width: 25%;
+}
+
+body .menu .card_zone_resto .resto_col2 {
+  width: 70%;
+}
+
 body .menu .card_zone_resto h2 {
   font-size: 250%;
   font-weight: 200;
@@ -477,6 +501,7 @@ body .menu .card_zone_resto h2 {
 }
 
 body .menu .card_zone_resto .card_resto {
+  margin-left: 30px;
   background-color: white;
   width: 90%;
   max-height: 150px;
@@ -591,16 +616,20 @@ body .menu .card_zone_resto .card_resto .nb {
   text-align: right;
 }
 
-body .menu .card_zone_resto :hover {
+body .menu .card_zone_resto .resto_col2 {
+  width: 100%;
+}
+
+body .menu .card_zone_resto .resto_col2 :hover {
   cursor: pointer;
 }
 
-body .menu .card_zone_resto :hover .scare {
+body .menu .card_zone_resto .resto_col2 :hover .scare {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-body .menu .card_zone_resto :hover .sign {
+body .menu .card_zone_resto .resto_col2 :hover .sign {
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
 }
@@ -610,6 +639,8 @@ body .menu .card_zone_resto .pres_btn {
   border-radius: 100px;
   width: 400px;
   height: 100px;
+  position: relative;
+  left: 30%;
   margin-bottom: 100px;
   font-size: 200%;
   color: white;

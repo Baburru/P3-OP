@@ -7,13 +7,98 @@
     <link rel="stylesheet" media="all" href="dart-sass/sass/style.css">
     <link rel="stylesheet" href="dart-sass/sass/desktop.css" />
     <script src="https://kit.fontawesome.com/dc211c93c5.js" crossorigin="anonymous"></script>
+    <style>
+    .anim {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+
+}
+
+#chaudron {
+    width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(360);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.couv {
+    animation: gauche_droite 2s infinite ease-in-out;
+}
+.spoon {
+    font-size: 1000%;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    animation: flickerAnimation 2s infinite ease-in-out;
+}
+
+@keyframes flickerAnimation {
+
+    25%  { 
+         transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(100deg); 
+    }
+
+  }
+
+@keyframes gauche_droite {
+    25% {
+        transform: translate(100px);
+    }
+    75% {
+        transform: translate(-100px);
+    }
+    
+}
+    </style>
 </head>
 
 <body>
+    <div class="anim">
+        <div class="couv">
+            <i class="fa-solid fa-spoon fa-rotate-by spoon" style="--fa-rotate-angle: 135deg; color:#C3A27E"></i>
+        </div>
+        <img id="chaudron" src="Maquettes_Ohmyfood/images/divers/cauldron.png">
 
+    </div>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector(".anim").style.visibility = "visible";
+
+            } else {
+                document.querySelector(".anim").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
     <header>
         <img id="logo" src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo oh my food">
     </header>
+
+
+
     <div class="intro">
         <section id="localisation">
             <i class="fa-solid fa-location-dot ping"></i>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.section {
+    background-color: whitesmoke;
+height: 100vh;
+width: 100%;
+}
+
+.anim {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+
+}
+
+#chaudron {
+    width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(360);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.couv {
+    animation: gauche_droite 2s infinite ease-in-out;
+}
+.spoon {
+    font-size: 1000%;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    animation: flickerAnimation 2s infinite ease-in-out;
+}
+
+@keyframes flickerAnimation {
+
+    25%  { 
+         transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(100deg); 
+    }
+
+  }
+
+@keyframes gauche_droite {
+    25% {
+        transform: translate(100px);
+    }
+    75% {
+        transform: translate(-100px);
+    }
+    
+}

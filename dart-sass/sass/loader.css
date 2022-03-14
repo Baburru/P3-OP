@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.section {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+}
+
+.anim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 20%;
+}
+
+#chaudron {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(360);
+            transform: rotate(360);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(360);
+            transform: rotate(360);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.couv {
+  -webkit-animation: gauche_droite 2s infinite ease-in-out;
+          animation: gauche_droite 2s infinite ease-in-out;
+}
+
+.spoon {
+  font-size: 1000%;
+  position: relative;
+  z-index: 1;
+  top: 100px;
+  -webkit-animation: flickerAnimation 2s infinite ease-in-out;
+          animation: flickerAnimation 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes flickerAnimation {
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+  }
+}
+
+@keyframes flickerAnimation {
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+  }
+}
+
+@-webkit-keyframes gauche_droite {
+  25% {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+  75% {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+}
+
+@keyframes gauche_droite {
+  25% {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+  75% {
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+}
+/*# sourceMappingURL=loader.css.map */
