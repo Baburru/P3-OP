@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#localisation {
+  -webkit-box-shadow: inset 0px 10px 10px 0.3px grey;
+          box-shadow: inset 0px 10px 10px 0.3px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b8b8b8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#localisation h2 {
+  font-family: "Shrikhand", sans-serif;
+  padding-top: 7px;
+}
+
+.ping {
+  font-size: 170%;
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+#presentation {
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+#presentation h1 {
+  font-size: 300%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#presentation p {
+  font-size: 200%;
+  text-align: center;
+  font-weight: lighter;
+  color: #5a5a5a;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#presentation a {
+  color: white;
+}
+
+#presentation .pres_btn {
+  border-radius: 100px;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 50px;
+  font-size: 200%;
+  color: white;
+  background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
+  border-style: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+#presentation .pres_btn:hover {
+  background-color: red;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#fonctionnement {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#fonctionnement .number {
+  background: #9356DC;
+  position: relative;
+  left: 30px;
+  font-size: 230%;
+  text-align: center;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+#fonctionnement h2 {
+  font-size: 250%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+}
+
+#fonctionnement h1 {
+  font-size: 300%;
+}
+
+#fonctionnement #card_zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+}
+
+#fonctionnement p {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  color: white;
+}
+
+#fonctionnement .card_fonctio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fonctionnement .content_card_fonctio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  border-radius: 50px;
+  background: #f2f2f2;
+  padding: 20px;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+}
+
+#fonctionnement .icon_fonc {
+  width: 6%;
+  height: 6%;
+  position: relative;
+  top: 20px;
+  margin-right: 100px;
+  margin-left: 80px;
+}
+
+#fonctionnement i {
+  font-size: 200%;
+  margin-left: 60px;
+  margin-right: 30px;
+  position: relative;
+  top: 20px;
+}
+
+#restaurants {
+  background-color: #f2f2f2;
+  height: auto;
+}
+
+#restaurants #card_resto_zone {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#restaurants .card_resto {
+  width: 100%;
+  border-radius: 70px;
+  background-color: white;
+  height: auto;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#restaurants .card_resto h2 {
+  font-size: 300%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+#restaurants .card_resto p {
+  font-size: 300%;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+#restaurants .img_resto {
+  width: 100%;
+  height: 488px;
+  border-radius: 70px 70px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants .anim-heart {
+  position: relative;
+  top: 70px;
+  right: 70px;
+}
+
+#restaurants .card_txt :hover {
+  cursor: pointer;
+}
+
+#restaurants h1 {
+  font-size: 400%;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+
+#restaurants .card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
+  background-color: #5e5e5e;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+footer #list_footer {
+  font-size: 200%;
+  color: white;
+  list-style: none;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+footer #list_footer a {
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+footer #logo_footer {
+  color: white;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  padding: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+label.icon--heart:before, label.icon--heart:after {
+  font-family: 'fontAwesome';
+  content: '\f004';
+  font-weight: 200;
+  font-size: 70px;
+  position: absolute;
+  right: 50px;
+}
+
+label:before {
+  color: grey;
+}
+
+label:after {
+  opacity: 0;
+  color: #9356DC;
+}
+
+.container > input:checked ~ label.icon--heart:before {
+  color: #9356DC;
+  -webkit-animation: pulse 0.5s alternate;
+          animation: pulse 0.5s alternate;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes fade {
+  0% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .button_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: none;
+  background-color: transparent;
+  position: relative;
+  right: 200px;
+  font-size: 70px;
+}
+
+body .img_resto_big {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .menu {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #f0f0f0;
+  bottom: 70px;
+  border-radius: 70px 70px 0px 0px;
+}
+
+body .menu .top_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+
+body .menu .top_menu h1 {
+  font-family: 'Shrikhand', 'cursive';
+  font-size: 500%;
+  font-weight: 400;
+}
+
+body .menu .top_menu .anim-heart {
+  margin-top: 30px;
+}
+
+body .menu .card_zone_resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+body .menu .card_zone_resto h2 {
+  font-size: 250%;
+  font-weight: 200;
+  margin-top: 100px;
+  margin-left: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body .menu .card_zone_resto .card_resto {
+  margin-left: 30px;
+  background-color: white;
+  width: 90%;
+  max-height: 150px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  font-size: 200%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+body .menu .card_zone_resto .card_resto .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body .menu .card_zone_resto .card_resto h3 {
+  font-size: 130%;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+}
+
+body .menu .card_zone_resto .card_resto p {
+  text-overflow: ellipsis;
+}
+
+body .menu .card_zone_resto .card_resto .content_card_resto {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+body .menu .card_zone_resto .card_resto .content_card_resto p {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+body .menu .card_zone_resto .card_resto .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 900;
+  font-size: 130%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .menu .card_zone_resto .card_resto .anim_green {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: auto;
+  height: 100px;
+  position: relative;
+  bottom: 30px;
+}
+
+body .menu .card_zone_resto .card_resto .scare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 180px;
+  height: 170px;
+  background-color: #00c97c;
+  position: relative;
+  left: 20px;
+  -webkit-transform: translate(180px, 0);
+          transform: translate(180px, 0);
+  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+body .menu .card_zone_resto .card_resto .scare .sign {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  right: 35%;
+  font-size: 170%;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  color: white;
+}
+
+body .menu .card_zone_resto .card_resto .nb {
+  text-align: right;
+}
+
+body .menu .card_zone_resto .content {
+  width: 100%;
+}
+
+body .menu .card_zone_resto .content :hover {
+  cursor: pointer;
+}
+
+body .menu .card_zone_resto .content :hover .scare {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+body .menu .card_zone_resto .content :hover .sign {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
+body .menu .card_zone_resto .pres_btn {
+  margin-top: 80px;
+  border-radius: 100px;
+  width: 400px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 100px;
+  font-size: 200%;
+  color: white;
+  background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700444892.jpg);
+  border-style: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+body .menu .card_zone_resto .pres_btn:hover {
+  background-color: red;
+  -webkit-box-shadow: 5px 3px 10px #a8a8a8;
+          box-shadow: 5px 3px 10px #a8a8a8;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+/*# sourceMappingURL=style.css.map */

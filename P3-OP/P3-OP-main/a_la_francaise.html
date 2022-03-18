@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Oh My Food</title>
+    <link rel="stylesheet" href="dart-sass/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (min-width: 1224px)" href="dart-sass/sass/desktop.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc211c93c5.js" crossorigin="anonymous"></script>
+    <style>
+        .card_resto:nth-child(2) {animation-delay: 0s;}
+.card_resto:nth-child(3) {animation-delay: 0.2s;}
+.card_resto:nth-child(4) {animation-delay: 0.4s;}
+.card_resto:nth-child(6) {animation-delay: 0.6s;}
+.card_resto:nth-child(7) {animation-delay: 0.8s;}
+.card_resto:nth-child(8) {animation-delay: 1s;}
+.card_resto:nth-child(10) {animation-delay: 1.2s;}
+.card_resto:nth-child(11) {animation-delay: 1.4s;}
+.card_resto:nth-child(12) {animation-delay: 1.6s;}
+        .card_resto {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translate(0,20%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="button_header" onclick="window.location.href = 'index.html';"><i
+                class="fa-solid fa-arrow-left"></i></button>
+        <img class="logo" src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo oh my food">
+    </header>
+
+    <img class="img_resto_big" src="Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="img a la francaise">
+
+    <section class="menu">
+        <div class="top_menu">
+            <h1>À la française</h1>
+            <div class="anim-heart">
+                <div class="container">
+                    <input type="checkbox" id="fav3">
+    
+                    <label class="icon--heart" for="fav3"></label>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="card_zone_resto">
+
+            <h2>ENTRÉES</h2>
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Tartare de poulpe acidulé</h2>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Velouté de légumes d'antan</h2>
+                    <p>Carotte,panais,topinambour</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Soupe à l'oignon</h2>
+                    <p>Revisité</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <h2>PLATS</h2>
+            
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Coquilles Saint-Jacques</h2>
+                    <p>Accompagnées d'une purée de panais</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Magret de canard</h2>
+                    <p>Et parmentier de pommes de terres</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Pigeonneau d'Ille-et-Vilaine</h2>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <h2>DESSERTS</h2>
+            
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Pétales de violettes glacés</h2>
+                    <p>Et purée de noisettes</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Fondant au chocolat</h2>
+                    <p>Revisité</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="card_resto">
+                <div class="info">
+                <div class="content_card_resto">
+                    <h3>Millefeuille croustillant</h2>
+                    <p>Myrtilles et pâtes d'amande</p>
+                </div>
+                <div class="prix">
+                    <p class="nb">25€</p>
+                </div>
+            </div>
+            <div class="anim_green">
+                <div class="scare">
+                    <div class="sign">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <button type="button" class="pres_btn">Commander</button>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <img id="logo_footer" src="Maquettes_Ohmyfood/images/logo/ohmyfood.png" alt="logo oh my food">
+        <ul id="list_footer">
+            <li><i class="fa-solid fa-utensils icon_footer"></i><a href="#">Proposer un restaurant</a></li>
+            <li><i class="fa-solid fa-handshake icon_footer"></i><a href="#">Devenir partenraire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+</body>
