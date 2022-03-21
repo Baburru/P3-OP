@@ -151,11 +151,31 @@ footer {
 
     & .card_zone_resto {
         flex-direction: row;
+        margin: 0;
     }
 
-    & .resto_col1{
-        display: flex;
+    & .sidebar {
+        float: right;
+        position: relative;
+        width: 20%;
+        padding: 10px;
+        height: 1980px;
+        text-align: left;
+        margin-left: 20px;
+
+        & p {
+            font-size: 150%;
+            margin-bottom: 20px;
+        }
     }
 
+    & .content {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 }

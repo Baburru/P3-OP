@@ -141,11 +141,27 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0;
   }
-  .menu .resto_col1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .menu .sidebar {
+    float: right;
+    position: relative;
+    width: 20%;
+    padding: 10px;
+    height: 1980px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .menu .sidebar p {
+    font-size: 150%;
+    margin-bottom: 20px;
+  }
+  .menu .content {
+    width: 100%;
+  }
+  .menu a {
+    text-decoration: none;
+    color: black;
   }
 }
 /*# sourceMappingURL=desktop.css.map */

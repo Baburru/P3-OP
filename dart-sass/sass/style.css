@@ -5,7 +5,6 @@
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 body {
@@ -76,6 +75,10 @@ header {
   color: #5a5a5a;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+#presentation a {
+  color: white;
 }
 
 #presentation .pres_btn {
@@ -473,22 +476,11 @@ body .menu .card_zone_resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .menu .card_zone_resto .resto_col1 {
-  display: none;
-  width: 25%;
-}
-
-body .menu .card_zone_resto .resto_col2 {
-  width: 70%;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 
 body .menu .card_zone_resto h2 {
@@ -616,20 +608,20 @@ body .menu .card_zone_resto .card_resto .nb {
   text-align: right;
 }
 
-body .menu .card_zone_resto .resto_col2 {
+body .menu .card_zone_resto .content {
   width: 100%;
 }
 
-body .menu .card_zone_resto .resto_col2 :hover {
+body .menu .card_zone_resto .content :hover {
   cursor: pointer;
 }
 
-body .menu .card_zone_resto .resto_col2 :hover .scare {
+body .menu .card_zone_resto .content :hover .scare {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-body .menu .card_zone_resto .resto_col2 :hover .sign {
+body .menu .card_zone_resto .content :hover .sign {
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
 }

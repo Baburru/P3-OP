@@ -5,7 +5,6 @@
 
 a {
     text-decoration: none;
-    color: white;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -64,6 +63,10 @@ font-size: 170%;
         margin-top: 20px;
         margin-bottom: 30px;
         
+    }
+
+    & a {
+        color: white;
     }
 
     & .pres_btn {
@@ -404,17 +407,9 @@ body {
 
         & .card_zone_resto {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            width: 100%;
 
-            & .resto_col1 {
-                display: none;
-                width: 25%;
-            }
-
-            & .resto_col2 {
-                width: 70%;
-            }
 
             & h2 {
                 font-size: 250%;
@@ -511,7 +506,7 @@ body {
 
 
             }
-           & .resto_col2 {
+           & .content {
                width: 100%;
 
 
