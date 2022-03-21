@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Oh My Food</title>
     <link rel="stylesheet" href="dart-sass/sass/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 1224px)" href="dart-sass/sass/desktop.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1224px)" href="dart-sass/sass/desktop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,32 +13,60 @@
 
 </head>
 <style>
-    .card_resto:nth-child(2) {animation-delay: 0s;}
-    .card_resto:nth-child(3) {animation-delay: 0.2s;}
-    .card_resto:nth-child(4) {animation-delay: 0.4s;}
-    .card_resto:nth-child(6) {animation-delay: 0.6s;}
-    .card_resto:nth-child(7) {animation-delay: 0.8s;}
-    .card_resto:nth-child(8) {animation-delay: 1s;}
-    .card_resto:nth-child(10) {animation-delay: 1.2s;}
-    .card_resto:nth-child(11) {animation-delay: 1.4s;}
-    .card_resto:nth-child(12) {animation-delay: 1.6s;}
-    
-            .card_resto {
-                animation: fadeInAnimation ease 1s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-                opacity: 0;
-            }
-            @keyframes fadeInAnimation {
-                0% {
-                    opacity: 0;
-                    transform: translate(0,20%);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translate(0);
-                }
-            }
+    .card_resto:nth-child(2) {
+        animation-delay: 0s;
+    }
+
+    .card_resto:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .card_resto:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .card_resto:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    .card_resto:nth-child(7) {
+        animation-delay: 0.8s;
+    }
+
+    .card_resto:nth-child(8) {
+        animation-delay: 1s;
+    }
+
+    .card_resto:nth-child(10) {
+        animation-delay: 1.2s;
+    }
+
+    .card_resto:nth-child(11) {
+        animation-delay: 1.4s;
+    }
+
+    .card_resto:nth-child(12) {
+        animation-delay: 1.6s;
+    }
+
+    .card_resto {
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+            transform: translate(0, 20%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
 </style>
 
 <body>
@@ -57,199 +85,209 @@
             <div class="anim-heart">
                 <div class="container">
                     <input type="checkbox" id="fav3">
-    
+
                     <label class="icon--heart" for="fav3"></label>
                 </div>
             </div>
         </div>
-    
 
-    
+
+
         <div class="card_zone_resto">
 
-            <h2>ENTRÉES</h2>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Ravioles de foie gras</h2>
-                    <p>Accompagnées de leur crème à la truffe</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
+            <div class="sidebar">
+                <div data-fixed data-offset="60" data-constraint=".sidebar">
+                    <p><a href="#entree">ENTRÉES</a></p>
+                    <p><a href="#plats">PLATS</a></p>
+                    <p><a href="#desserts">DESSERTS</a></p>
                 </div>
             </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+            <div class="content">
+
+                <h2 id="entree">ENTRÉES</h2>
+
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Ravioles de foie gras</h2>
+                                <p>Accompagnées de leur crème à la truffe</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Caviar</h2>
-                    <p>Sur blini à la farine de blé noir</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Caviar</h2>
+                                <p>Sur blini à la farine de blé noir</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Homard et espuma de truffe</h2>
-                    <p>Mariné aux zests d'orange</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Homard et espuma de truffe</h2>
+                                <p>Mariné aux zests d'orange</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    
-            <h2>PLATS</h2>
-            
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Noix de coquilles Saint-Jacques</h2>
-                    <p>Sur lit de purée de céleri-rave</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+
+                <h2 id="plats">PLATS</h2>
+
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Noix de coquilles Saint-Jacques</h2>
+                                <p>Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Langoustine poêlée</h2>
-                    <p>Purée de patate douce</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Langoustine poêlée</h2>
+                                <p>Purée de patate douce</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Mijoté de queue de boeuf</h2>
-                    <p>Et riz sauvage aux zests de citron</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Mijoté de queue de boeuf</h2>
+                                <p>Et riz sauvage aux zests de citron</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <h2>DESSERTS</h2>
-            
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Macaron noisette et chocolat</h2>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <h2 id="desserts">DESSERTS</h2>
+
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Macaron noisette et chocolat</h2>
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Baba au rhum revisité</h2>
-                    <p>Avec son coulis de citron</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Baba au rhum revisité</h2>
+                                <p>Avec son coulis de citron</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-            <div class="card_resto">
-                <div class="info">
-                <div class="content_card_resto">
-                    <h3>Tarte au citron meringuée</h2>
-                    <p>Destructurée</p>
-                </div>
-                <div class="prix">
-                    <p class="nb">25€</p>
-                </div>
-            </div>
-            <div class="anim_green">
-                <div class="scare">
-                    <div class="sign">
-                        <i class="fa-solid fa-circle-check"></i>
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Tarte au citron meringuée</h2>
+                                <p>Destructurée</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">25€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <button type="button" class="pres_btn">Commander</button>
+
             </div>
-        </div>
 
-            <button type="button" class="pres_btn">Commander</button>
 
         </div>
-
-
-
 
 
     </section>
@@ -271,4 +309,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </footer>
+
+    <div style="clear:both"></div>
+    <script src="fixed.js"></script>
+
 </body>

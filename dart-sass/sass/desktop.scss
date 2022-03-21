@@ -4,9 +4,14 @@
 header {
 
 
-    & #logo {
+    & .logo {
         width: 15%;
 
+    }
+    & .arrow {
+        font-size: 70%;
+        position: relative;
+        bottom: 8px;
     }
     box-shadow: 0 4px 2px -2px gray;
 
@@ -136,6 +141,7 @@ footer {
 
 
 .menu {
+
     & .card_resto {
         height: 100px;
         
@@ -152,6 +158,7 @@ footer {
     & .card_zone_resto {
         flex-direction: row;
         margin: 0;
+        
     }
 
     & .sidebar {

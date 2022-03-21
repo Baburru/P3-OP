@@ -3,8 +3,13 @@
     -webkit-box-shadow: 0 4px 2px -2px gray;
             box-shadow: 0 4px 2px -2px gray;
   }
-  header #logo {
+  header .logo {
     width: 15%;
+  }
+  header .arrow {
+    font-size: 70%;
+    position: relative;
+    bottom: 8px;
   }
   header .button_header {
     position: absolute;
