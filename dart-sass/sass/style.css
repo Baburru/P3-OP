@@ -9,6 +9,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: white;
 }
 
 #localisation {
@@ -118,6 +120,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -295,6 +298,7 @@ footer {
   background-color: #5e5e5e;
   width: 100%;
   padding-bottom: 5px;
+  padding: 10px;
 }
 
 footer #list_footer {
@@ -309,8 +313,11 @@ footer #list_footer a {
   font-style: normal;
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  margin-left: 20px;
+}
+
+footer #list_footer i {
+  width: 40px;
+  margin-right: 15px;
 }
 
 footer #logo_footer {
@@ -332,7 +339,6 @@ label {
 label.icon--heart:before, label.icon--heart:after {
   font-family: 'fontAwesome';
   content: '\f004';
-  font-weight: 200;
   font-size: 70px;
   position: absolute;
   right: 50px;
@@ -345,6 +351,7 @@ label:before {
 label:after {
   opacity: 0;
   color: #9356DC;
+  font-weight: 100;
 }
 
 .container > input:checked ~ label.icon--heart:before {
@@ -549,13 +556,20 @@ body .menu .card_zone_resto .card_resto .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: 900;
   font-size: 130%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transform: translate(180px, 0);
+          transform: translate(180px, 0);
+  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
 }
 
 body .menu .card_zone_resto .card_resto .anim_green {
@@ -612,6 +626,14 @@ body .menu .card_zone_resto .content {
   width: 100%;
 }
 
+body .menu .card_zone_resto .content .dash {
+  background-color: #00c97c;
+  height: 7px;
+  width: 100px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
 body .menu .card_zone_resto .content :hover {
   cursor: pointer;
 }
@@ -626,13 +648,18 @@ body .menu .card_zone_resto .content :hover .sign {
           transform: rotate(720deg);
 }
 
+body .menu .card_zone_resto .content :hover .prix {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 body .menu .card_zone_resto .pres_btn {
+  margin: 0 auto;
   margin-top: 80px;
+  display: block;
   border-radius: 100px;
   width: 400px;
   height: 100px;
-  position: relative;
-  left: 30%;
   margin-bottom: 100px;
   font-size: 200%;
   color: white;
