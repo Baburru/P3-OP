@@ -1,16 +1,35 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    font-family: sans-serif;
-    text-align: center;
-}
 
-.section {
-    background-color: whitesmoke;
-height: 100vh;
-width: 100%;
-}
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .loader {
+      position: fixed;
+      background-color: #f1ebeb;
+      height: 100vh;
+      inset: 0;
+      z-index: 1;
+      animation: disparition 2s;
+      animation-fill-mode: forwards;
+      transform-origin: top;
+  }
+  
+  @keyframes disparition {
+      0% {
+          transform: scale(1);
+      }
+  
+      99% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(0);
+      }
+  }
+
+  
+  
 
 .anim {
     display: flex;
@@ -19,7 +38,7 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 20%;
+    top: 40%;
 
 }
 
@@ -49,6 +68,7 @@ width: 100%;
     font-size: 1000%;
     position: relative;
     z-index: 1;
+    left: 80px;
     top: 100px;
     animation: flickerAnimation 2s infinite ease-in-out;
 }
