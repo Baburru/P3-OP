@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Oh My Food</title>
+    <title>Oh My Food | La note enchanté</title>
     <link rel="stylesheet" href="dart-sass/sass/style.css">
+    <link rel="stylesheet" media="all" href="dart-sass/sass/testloader.css">
     <link rel="stylesheet" media="screen and (min-width: 1224px)" href="dart-sass/sass/desktop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,40 +14,44 @@
 
 </head>
 <style>
-            .card_resto:nth-child(3) {
-            animation-delay: 0s;
+        .card_resto:nth-child(3) {
+            animation-delay: 2s;
         }
 
         .card_resto:nth-child(4) {
-            animation-delay: 0.2s;
+            animation-delay: 2.2s;
         }
 
         .card_resto:nth-child(5) {
-            animation-delay: 0.4s;
+            animation-delay: 2.4s;
+        }
+        .card_resto:nth-child(6) {
+            animation-delay: 2.6s;
         }
 
-        .card_resto:nth-child(8) {
-            animation-delay: 0.6s;
-        }
 
         .card_resto:nth-child(9) {
-            animation-delay: 0.8s;
+            animation-delay: 2.8s;
         }
 
         .card_resto:nth-child(10) {
-            animation-delay: 1s;
+            animation-delay: 3s;
         }
 
-        .card_resto:nth-child(13) {
-            animation-delay: 1.2s;
+        .card_resto:nth-child(11) {
+            animation-delay: 3.2s;
         }
 
         .card_resto:nth-child(14) {
-            animation-delay: 1.4s;
+            animation-delay: 3.4s;
         }
 
         .card_resto:nth-child(15) {
-            animation-delay: 1.6s;
+            animation-delay: 3.6s;
+        }
+
+        .card_resto:nth-child(16) {
+            animation-delay: 3.8s;
         }
 
     .card_resto {
@@ -70,6 +75,22 @@
 </style>
 
 <body>
+
+    <div>
+        <div class="loader">
+            <div class="load">
+                <div class="anim">
+                    <div class="couv">
+                        <i class="fa-solid fa-spoon fa-rotate-by spoon"
+                            style="--fa-rotate-angle: 135deg; color:#C3A27E"></i>
+                    </div>
+                    <img id="chaudron" src="Maquettes_Ohmyfood/images/divers/cauldron.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <header>
         <button class="button_header" onclick="window.location.href = 'index.html';"><i
                 class="fa-solid fa-arrow-left"></i></button>
@@ -125,7 +146,7 @@
                                 <p>Sur blini à la farine de blé noir</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">35€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -144,7 +165,26 @@
                                 <p>Mariné aux zests d'orange</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">20€</p>
+                        </div>
+                    </div>
+                    <div class="anim_green">
+                        <div class="scare">
+                            <div class="sign">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_resto">
+                    <div class="info">
+                        <div class="content_card_resto">
+                            <h3>Foie gras de canard cuit entier</h2>
+                                <p>Confiture de figue et pain toasté</p>
+                        </div>
+                        <div class="prix">
+                            <p class="nb">35€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -166,7 +206,7 @@
                                 <p>Sur lit de purée de céleri-rave</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">40€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -185,7 +225,7 @@
                                 <p>Purée de patate douce</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">35€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -204,7 +244,7 @@
                                 <p>Et riz sauvage aux zests de citron</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">44€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -226,7 +266,7 @@
                                 <p>Glace au caramel brun et sel de Guérande</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">18€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -245,7 +285,7 @@
                                 <p>Avec son coulis de citron</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">22€</p>
                         </div>
                     </div>
                     <div class="anim_green">
@@ -264,7 +304,7 @@
                                 <p>Destructurée</p>
                         </div>
                         <div class="prix">
-                            <p class="nb">25€</p>
+                            <p class="nb">23€</p>
                         </div>
                     </div>
                     <div class="anim_green">

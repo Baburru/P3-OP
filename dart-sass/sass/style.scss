@@ -193,6 +193,29 @@ height: auto;
         justify-content: space-evenly;
     }
 
+    & .new_hide {
+        display: hidden;
+
+        color: transparent;
+        width: fit-content;
+        padding: 10px;
+        font-size: 200%;
+        position: relative;
+        top: 100px;
+        left: 75%;
+    }
+    & .new {
+        background-color: #99E2D0;
+        color: #098C6C;
+        width: fit-content;
+        padding: 10px;
+        font-size: 200%;
+        position: relative;
+        top: 100px;
+        left: 75%;
+
+
+    }
 
     & .card_resto {
         width: 100%;
@@ -202,6 +225,8 @@ height: auto;
         padding-bottom: 50px;
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
 
         & h2 {
             font-size: 300%;

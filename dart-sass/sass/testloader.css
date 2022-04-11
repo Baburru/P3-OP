@@ -6,11 +6,11 @@ h1, h2, h3, h4, h5, h6, p {
 .loader {
   position: fixed;
   background-color: #f1ebeb;
-  height: 100vh;
+  height: 110vh;
   inset: 0;
   z-index: 1;
-  -webkit-animation: disparition 2s;
-          animation: disparition 2s;
+  -webkit-animation: disparition 1.7s;
+          animation: disparition 1.7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform-origin: top;

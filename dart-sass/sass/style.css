@@ -236,6 +236,32 @@ header {
           justify-content: space-evenly;
 }
 
+#restaurants .new_hide {
+  display: hidden;
+  color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-size: 200%;
+  position: relative;
+  top: 100px;
+  left: 75%;
+}
+
+#restaurants .new {
+  background-color: #99E2D0;
+  color: #098C6C;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-size: 200%;
+  position: relative;
+  top: 100px;
+  left: 75%;
+}
+
 #restaurants .card_resto {
   width: 100%;
   border-radius: 70px;
